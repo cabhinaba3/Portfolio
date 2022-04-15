@@ -4,90 +4,81 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style type="text/css">
-    body{margin: auto;text-align: center;}
-    .w3-bar{
-      width: 70%;
-      text-align: center;
-    }
-
-    #education{
-      margin-left: 30%;
-    }
-
-    .social{
-      display: flex;
-      justify-content: center;
-    }
-    .social li{
-      text-decoration: none;
-    }
-  </style>
-	<title>Abhinaba Chakraborty</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Abhinaba Chakraborty</title>
 </head>
 <body>
-	<section class="header">
-		<h3 id="name">Abhinaba Chakraborty</h3>
-		<p id="name-description">Hey there. How you doing</p>
-	</section>
-	
-  <div class="">
-  		<button class="w3-bar-item w3-button" onclick="openNav('education')">Education</button>
-
-    <button class="w3-bar-item w3-button" onclick="openNav('internships')">Internships</button>
-    
-    <button class="w3-bar-item w3-button" onclick="openNav('projects')">Projects</button>
-    
-    <button class="w3-bar-item w3-button" onclick="openNav('contacts')">Contacts</button>
-
-    <button class="w3-bar-item w3-button" onclick="openNav('links')">Extra Links</button>
-
+  <div class="sidenav">
+    <h3>Social Media Links</h3>
+    <a href="">Facebook</a>
+    <a href="">Linkedin</a>
+    <a href="">Instagram</a>
   </div>
+  <div class="content">
+    <section class="header">
+      <h1 id="name">Abhinaba Chakraborty</h1>
+      <p id="name-description">Hey there. How you doing</p>
+    </section>
 
-  <div id="education" class="w3-container options">
-    <dl style="text-align: left;">
-      <dt>Indian Statistical Institute, Kolkata</dt>
-      <dd>M.Tech in Computer Science</dd>
-      <dt>Jadavpur University, Kolkata</dt>
-      <dd>B.E in Electrical Engineering</dd>
-    </dl>
-  </div>
-
-  <div id="internships" class="w3-container options" style="display:none">
-    <h5>Indian Institute of Technology, Kharagpur</h5> 
-  </div>
-
-  <div id="projects" class="w3-container options" style="display:none">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-
-  <div id="contacts" class="w3-container options" style="display:none">
-    <h2>Baal</h2>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-
-  <div id="links" class="w3-container options" style="display:none">
-    <h5>Extra Links</h5>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  
-  <section class="footer">
     <div class="">
-      <button class="w3-bar-item w3-button">
-        <a href="">Facebook</a>
-      </button>
+      <button class="w3-bar-item w3-button" onclick="openNav('education')">Education</button>
 
-      <button class="w3-bar-item w3-button">
-        <a href="">Linkedin</a>
-      </button>
-    
-      <button class="w3-bar-item w3-button" >
-        <a href="">Instagram</a>
-      </button>
+      <button class="w3-bar-item w3-button" onclick="openNav('internships')">Internships</button>
+
+      <button class="w3-bar-item w3-button" onclick="openNav('projects')">Projects</button>
+
+      <button class="w3-bar-item w3-button" onclick="openNav('contacts')">Contacts</button>
+
+      <button class="w3-bar-item w3-button" onclick="openNav('links')">Extra Links</button>
 
     </div>
-  </section>
+
+    <div id="education" class="w3-container options">
+      <div id="isi">
+        <h5><a href="https://www.isical.ac.in/">Indian Statistical Institute, Kolkata</a></h5>
+        <p>I am pursuing M.Tech in Computer Science here. Currently in my second semester</p>
+      </div>
+
+      <div id="ju">
+        <h5><a href="http://www.jaduniv.edu.in/">Jadavpur University, Kolkata</a></h5>
+        <p>I have completed B.E in Electrical Engineering here.</p>
+      </div>
+
+      <div id="mcs">
+        <h5><a href="http://midnaporecollegiateschool.org.in/">Midnapore Collegiate School</a></h5>
+        <p>I spent my entire childhood here. Learning new stuffs xD</p>
+      </div>
+
+    </div>
+
+    <div id="internships" class="w3-container options" style="display:none">
+      <div id="iit">
+        <h5><a href="http://midnaporecollegiateschool.org.in/">Indian Institute of Technology, Kharagpur</a></h5>
+        <p>I spent my entire childhood here. Learning new stuffs xD</p>
+      </div>
+    </div>
+
+    <div id="projects" class="w3-container options" style="display:none">
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="contacts" class="w3-container options" style="display:none">
+      <h2>Contacts</h2>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="links" class="w3-container options" style="display:none">
+      <h5>Extra Links</h5>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <section class="footer">
+      <div class="f">
+        This Website is under construction
+      </div>
+    </section>
+  </div>
   <script>
     function openNav(cityName) {
       var i;
@@ -95,8 +86,8 @@
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
       }
-    document.getElementById(cityName).style.display = "block";  
-  }
+      document.getElementById(cityName).style.display = "block";  
+    }
   </script>
 </body>
 </html>
