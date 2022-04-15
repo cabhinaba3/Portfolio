@@ -16,18 +16,29 @@ body{margin: auto;}
   color: white;
 }
 .sidenav a{
+  text-align: center;
   color: white;
   padding: 16px;
   text-decoration: none;
   display: block;
   transition: transform 0.5s;
 }
-
 .sidenav a:hover {
   background-color: #ddd;
   color: black;
   transform: scale(1.2);
 
+}
+
+.nav-bar{
+  font-size: 1.1em;
+  text-align: center;
+}
+.w3-button{
+  transition: transform 0.5s;
+}
+.w3-button:hover{
+  transform: scale(1.1);
 }
 
 .content{
@@ -38,7 +49,6 @@ body{margin: auto;}
   width: 70%;
   text-align: center;
 }
-
 .header{
   text-align: center;
 }

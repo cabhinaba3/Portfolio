@@ -9,25 +9,29 @@
 </head>
 <body>
   <div class="sidenav">
-    <h3>Social Media Links</h3>
+    <h3 style="text-align: center;">Contacts</h3>
     <a href="">Facebook</a>
     <a href="">Linkedin</a>
     <a href="">Instagram</a>
+    <a href="">GITHUB</a>
   </div>
+
   <div class="content">
     <section class="header">
       <h1 id="name">Abhinaba Chakraborty</h1>
-      <p id="name-description">Hey there. How you doing</p>
+      <p id="name-description">Hey there, How you doing</p>
     </section>
 
-    <div class="">
+    <div class="nav-bar">
       <button class="w3-bar-item w3-button" onclick="openNav('education')">Education</button>
 
       <button class="w3-bar-item w3-button" onclick="openNav('internships')">Internships</button>
 
       <button class="w3-bar-item w3-button" onclick="openNav('projects')">Projects</button>
 
-      <button class="w3-bar-item w3-button" onclick="openNav('contacts')">Contacts</button>
+      <button class="w3-bar-item w3-button" onclick="openNav('skills')">Skills</button>
+
+      <!-- <button class="w3-bar-item w3-button" onclick="openNav('contacts')">Contacts</button> -->
 
       <button class="w3-bar-item w3-button" onclick="openNav('links')">Extra Links</button>
 
@@ -54,23 +58,44 @@
     <div id="internships" class="w3-container options" style="display:none">
       <div id="iit">
         <h5><a href="http://midnaporecollegiateschool.org.in/">Indian Institute of Technology, Kharagpur</a></h5>
-        <p>I spent my entire childhood here. Learning new stuffs xD</p>
+        <p>Worked on Object Oriented Image Classification on LandSat-8 image Data</p>
+        <a href="">Project Report</a>
       </div>
     </div>
 
     <div id="projects" class="w3-container options" style="display:none">
-      <h2>Tokyo</h2>
-      <p>Tokyo is the capital of Japan.</p>
+
+      <div id="proj">
+        <h5><a href="">Restaurant Buddy</a></h5>
+        <p>Worked on Restaurant Recommender System that recommends restaurants based on user location and user preferences.</p>
+        <a href="">Deployment</a>
+      </div>
+
+      <div id="proj">
+        <h5><a href="">B.E Thesis</a></h5>
+        <p>Worked on classification of Contamination level of high voltage insulator, given applied voltage samples and leakage current</p>
+        <a href="">Project Report</a>
+        <a href="">Publication</a>
+      </div>
+
+      <div id="proj">
+        <h5><a href="">Movie Recommender System</a></h5>
+        <p>Build a content based movie recommendation system based on movie dataset</p>
+      </div>
     </div>
 
-    <div id="contacts" class="w3-container options" style="display:none">
-      <h2>Contacts</h2>
+    <div id="skills" class="w3-container options" style="display:none">
+      <h2>Skills</h2>
       <p>Tokyo is the capital of Japan.</p>
     </div>
 
     <div id="links" class="w3-container options" style="display:none">
-      <h5>Extra Links</h5>
-      <p>Tokyo is the capital of Japan.</p>
+      <!-- <h5>Extra Links</h5> -->
+      <!-- <p>Tokyo is the capital of Japan.</p> -->
+      <ol>
+        <li><a href="http://info.cern.ch">First Website</a></li>
+        <li><a href="https://www.isical.ac.in/~dfslab/2021/index.html">ISI Computing Lab</a></li>
+      </ol>
     </div>
 
     <section class="footer">
