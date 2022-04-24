@@ -1,118 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Abhinaba Chakraborty</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
 </head>
 <body>
-  <div class="sidenav">
-    <h3 style="text-align: center;">Contacts</h3>
-    <a href="">Facebook</a>
-    <a href="">Linkedin</a>
-    <a href="">Instagram</a>
-    <a href="">GITHUB</a>
+  <div align="center">
+    <div align="left">
+      <ul style="list-style-type: none;">
+        <li>
+          <h1>Abhinaba Chakraborty</h1>
+        </li>
+        <li>M.Tech CS, ISI Kolkata</li>
+        <li>B.E Electrical, Jadavpur University</li>
+        <li>
+          <a target="_top" style="text-decoration: none;" href="#">cs2109</a>
+          AT isical.ac.in &nbsp;&nbsp;
+          <a target="_top" style="text-decoration: none;" href="#internship">Internships</a>
+          &nbsp;&nbsp;
+          <a target="_top" style="text-decoration: none;" href="#projects">Projects</a>
+          &nbsp;&nbsp;
+          <a target="_top" style="text-decoration: none;" href="#">Publications</a>
+          &nbsp;&nbsp;
+          <a target="_top" style="text-decoration: none;" href="#">Articles</a>
+          &nbsp;&nbsp;
+        </li>
+        <li><q>Some great <a href="">links</a> Enjoy</q></li>
+      </ul>
+
+      <hr>
+
+      <ul>
+        <li  style="list-style-type:none;">Stuck in 421 loop</li>
+      </ul>
+
+      <hr>
+    </div>
   </div>
 
-  <div class="content">
-    <section class="header">
-      <h1 id="name">Abhinaba Chakraborty</h1>
-      <p id="name-description">Hey there, How you doing</p>
-    </section>
-
-    <div class="nav-bar">
-      <button class="w3-bar-item w3-button" onclick="openNav('education')">Education</button>
-
-      <button class="w3-bar-item w3-button" onclick="openNav('internships')">Internships</button>
-
-      <button class="w3-bar-item w3-button" onclick="openNav('projects')">Projects</button>
-
-      <button class="w3-bar-item w3-button" onclick="openNav('skills')">Skills</button>
-
-      <!-- <button class="w3-bar-item w3-button" onclick="openNav('contacts')">Contacts</button> -->
-
-      <button class="w3-bar-item w3-button" onclick="openNav('links')">Extra Links</button>
-
-    </div>
-
-    <div id="education" class="w3-container options">
-      <div id="isi">
-        <h5><a href="https://www.isical.ac.in/">Indian Statistical Institute, Kolkata</a></h5>
-        <p>I am pursuing M.Tech in Computer Science here. Currently in my second semester</p>
-      </div>
-
-      <div id="ju">
-        <h5><a href="http://www.jaduniv.edu.in/">Jadavpur University, Kolkata</a></h5>
-        <p>I have completed B.E in Electrical Engineering here.</p>
-      </div>
-
-      <div id="mcs">
-        <h5><a href="http://midnaporecollegiateschool.org.in/">Midnapore Collegiate School</a></h5>
-        <p>I spent my entire childhood here. Learning new stuffs xD</p>
-      </div>
-
-    </div>
-
-    <div id="internships" class="w3-container options" style="display:none">
-      <div id="iit">
-        <h5><a href="http://midnaporecollegiateschool.org.in/">Indian Institute of Technology, Kharagpur</a></h5>
-        <p>Worked on Object Oriented Image Classification on LandSat-8 image Data</p>
-        <a href="">Project Report</a>
-      </div>
-    </div>
-
-    <div id="projects" class="w3-container options" style="display:none">
-
-      <div id="proj">
-        <h5><a href="">Restaurant Buddy</a></h5>
-        <p>Worked on Restaurant Recommender System that recommends restaurants based on user location and user preferences.</p>
-        <a href="">Deployment</a>
-      </div>
-
-      <div id="proj">
-        <h5><a href="">B.E Thesis</a></h5>
-        <p>Worked on classification of Contamination level of high voltage insulator, given applied voltage samples and leakage current</p>
-        <a href="">Project Report</a>
-        <a href="">Publication</a>
-      </div>
-
-      <div id="proj">
-        <h5><a href="">Movie Recommender System</a></h5>
-        <p>Build a content based movie recommendation system based on movie dataset</p>
-      </div>
-    </div>
-
-    <div id="skills" class="w3-container options" style="display:none">
-      <h2>Skills</h2>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
-
-    <div id="links" class="w3-container options" style="display:none">
-      <!-- <h5>Extra Links</h5> -->
-      <!-- <p>Tokyo is the capital of Japan.</p> -->
-      <ol>
-        <li><a href="http://info.cern.ch">First Website</a></li>
-        <li><a href="https://www.isical.ac.in/~dfslab/2021/index.html">ISI Computing Lab</a></li>
-      </ol>
-    </div>
-
-    <section class="footer">
-      <div class="f">
-        This Website is under construction
-      </div>
-    </section>
+  <div align="left" id="internship">
+    <h2>Internships</h2>
+    <ol>
+      <li>
+        <h3>IIT, Kharagpur</h3>
+        <p>Worked on Object Oriented Image Classification</p>
+      </li>
+    </ol>
   </div>
-  <script>
-    function openNav(cityName) {
-      var i;
-      var x = document.getElementsByClassName("options");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      document.getElementById(cityName).style.display = "block";  
-    }
-  </script>
+
+  <div align="left" id="projects">
+    <h2>Projects</h2>
+    <ol>
+      <li><a href="">A Simple Search Engine</a></li>
+      <li><a href="">Implement Maximum Heapable Subsequence</a></li>
+      <li><a href="">Restaurant Buddy-A recommendation system</a>
+      </li>
+      <li><a href="">B.E Thesis-High Voltage Contamination Prediction</a></li>
+      <li><a href="">Movie Recommender System</a>
+      </li>
+    </ol>
+  </div>
+
+  <div>
+    <h2>Publications</h2>
+    <ol>
+      <li>
+        Mathematical Morphology aided Random Forest Classifier based High Voltage Porcelain Insulator Contamination level Classification <a href="https://ieeexplore.ieee.org/document/9230691">[Publication]</a>
+      </li>
+    </ol>
+  </div>
 </body>
 </html>
