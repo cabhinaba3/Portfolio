@@ -4,11 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400i|Oswald:300,400,700" rel="stylesheet" media="all">
   <style>
-    *{
-      padding: 1;
-    }
-  </style>
+    body 
+    {
+     font-family:'Sorts Mill Goudy', Georgia, serif;
+   }
+
+   h1, h2, h3, h4, h5, h6 
+   {
+     font-family:'Oswald',Impact,'Arial Black',Arial,Helvetica,sans-serif;
+   }
+
+   .monospace {
+     font-family: monospace;
+   }
+
+   .muted {
+    color:#666;
+  }
+  abbr {
+    border-bottom: dotted 1px #cccddd;
+    cursor: help;
+    display:inline-block;
+    line-height:1;
+  }
+  a abbr {text-decoration:underline;}
+
+  .text--normal {font-weight:normal;}
+  .text--bigger {font-size:1.25em;}
+</style>
 </head>
 <body>
   <div align="center">
@@ -26,7 +51,7 @@
           &nbsp;&nbsp;
           <a target="_top" style="text-decoration: none;" href="#projects">Projects</a>
           &nbsp;&nbsp;
-          <a target="_top" style="text-decoration: none;" href="#">Publications</a>
+          <a target="_top" style="text-decoration: none;" href="#publications">Publications</a>
           &nbsp;&nbsp;
           <a target="_top" style="text-decoration: none;" href="#">Presentations</a>
           &nbsp;&nbsp;
@@ -40,43 +65,91 @@
         <li  style="list-style-type:none;">
           Hey, I'm <b>Abhinaba</b> and I'm currently stuck in 421 loop.
         </li>
+        <li style="list-style-type:none">
+          Hey!. Also I made some things using ChatGPT. 
+          <ul>
+            <li style="list-style-type:none;">
+              <a href="tic-tac-toe.html">Tic-Tac-Toe</a>
+            </li>
+            <li style="list-style-type:none;">
+              <a href="guess-number.html">Guess Number Game</a>
+            </li>
+            <li style="list-style-type:none;">
+              <a href="simple-game.html">Simple Game</a>
+            </li>
+          </ul>
+        </li>
+        <li style="list-style-type: none;">
+          Yeah its dumb. but who cares. I like those things.
+        </li>
+        <li style="list-style-type: none;">
+          This site {was,is,will be} under construction
+        </li>
       </ul>
-
       <hr>
     </div>
   </div>
-  <div>
-    This site {was,is,will be} in under construction
-  </div>
-  <div align="left" id="internship">
-    <h2>Internships</h2>
-    <ol>
-      <li>
-        <h3>Airtel Digital</h3>
-        <p>Worked on a data drift library</p>
-      </li>
-      <li>
-        <h3>IIT, Kharagpur</h3>
-        <p>Worked on Object Oriented Image Classification</p>
-      </li>
-    </ol>
+
+  <div id="internship" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+    <div style="width: 30vw; height: initial; flex: 1">
+      I have done <strong>internships</strong> at various organisations in various fields from image processing, to MLOps, Maching Learning, Computer System Architecture etc.
+    </div>
+    <div style="width: 70vw; hieght: initial; flex: 2">
+      <ol>
+        <li>
+          <i>Airtel Digital</i><br>
+          During summer break of my M.Tech at ISI, Kolkata I served as an Engineering Intern at Ad-Specialisation group of <strong>Airtel Digital</strong> where I worked with India scale data.~300 Million(Trust me its huge).
+        </li>
+        <li>
+          <i>IIT, Kharagpur</i><br>
+          During my summer break of B.E third year at Jadavpur Univeristy I worked as research intern at <strong>IIT, Kharagpur</strong>. There I worked on satellite image classification problems.
+        </li>
+      </ol>
+    </div>
   </div>
 
-  <div align="left" id="projects">
-    <h2>Projects</h2>
-    <ol>
-      <li><a href="https://github.com/cohitherewer/ISI-CS/tree/main/Information%20Retrieval/Simple%20Search%20Engine">A Simple Search Engine</a></li>
-      <li><a href="https://github.com/cohitherewer/ISI-CS/tree/main/CLAB%20Project">Implement Maximum Heapable Subsequence</a></li>
-    </ol>
+<hr>
+
+  <div id="projects" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+    <div style="width: 30vw; height: initial; flex: 1">
+      I am currently doing my M.Tech Dissertation and M.Tech Minor Project. Prior to that I completed B.E thesis, some course projects and some of my own personal project.
+    </div>
+    <div style="width: 70vw; height: initial; flex: 2">
+      <ol>
+        <li>
+          <i><a href="https://github.com/cohitherewer/ISI-CS/tree/main/Information%20Retrieval/Simple%20Search%20Engine" style="text-decoration:none;">Search Engine</a></i><br>
+          It is a course project of Information Retrieval of ISI M.Tech CS. Here I implemented searching and retrieving documents module from scratch in Pylucene.
+        </li>
+        <li>
+          <i><a href="https://github.com/cohitherewer/ISI-CS/tree/main/CLAB%20Project" style="text-decoration:none">Maximum Heapable Subsequence</a></i><br>
+          It is a course project for our computing lab at ISI,K. Implemented in C++.
+        </li>
+      </ol>
+    </div>
   </div>
 
-  <div>
-    <h2>Publications</h2>
-    <ol>
-      <li>
-        Mathematical Morphology aided Random Forest Classifier based High Voltage Porcelain Insulator Contamination level Classification <a href="https://ieeexplore.ieee.org/document/9230691">[Publication]</a>
-      </li>
-    </ol>
+<hr>
+
+  <div id="publications" style="text-align: center; display: block; justify-content: center; align-items: center;">
+    <div style="width: auto; height: initial; flex: 1">
+      Speaking of my <strong><i>Publications</i></strong> till now I have only one publication in the domain of High Voltage Engineering and Maching Learning.
+    </div>
+    <div style="width: auto; height: initial; flex: 2">
+      <ol>
+        
+        <li>
+          <div style="display: flex;">
+            <div style="width: 80vw">
+              Mathematical Morphology aided Random Forest Classifier based High Voltage Porcelain Insulator Contamination level Classification
+            </div>
+            <div style="20vw;">
+              <a href="https://ieeexplore.ieee.org/document/9230691">[Publication]</a>
+            </div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
   </div>
 
   <div>

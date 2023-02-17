@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  <style type="text/css">
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #008000;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  font-weight: bold;
+}
+
+  </style>
+  </head>
+  <body>
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 10:</p>
+    <input type="text" id="guess">
+    <button onclick="checkGuess()">Check</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+      var randomNumber = Math.floor(Math.random() * 10) + 1;
+var result = document.getElementById("result");
+
+function checkGuess() {
+  var guess = parseInt(document.getElementById("guess").value);
+
+  if (isNaN(guess)) {
+    result.innerHTML = "Please enter a valid number";
+  } else if (guess < 1 || guess > 10) {
+    result.innerHTML = "Please enter a number between 1 and 10";
+  } else if (guess === randomNumber) {
+    result.innerHTML = "Congratulations! You guessed the correct number.";
+  } else {
+    result.innerHTML = "Sorry, the correct number was " + randomNumber + ".";
+  }
+}
+    </script>
+  </body>
+</html>
