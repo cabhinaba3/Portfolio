@@ -1,0 +1,50 @@
+/* KickassLoadingScreen.css */
+
+.kickass-loading-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 4s ease-in-out;
+    background-color: #c8d2dc; /* Set background color */
+  }
+  
+  .kickass-loading-screen.loading {
+    opacity: 0;
+  }
+  
+  .custom-spinner {
+    border-top: 12px solid #3498db;
+    border-right: 12px solid #3498db;
+    border-bottom: 12px solid #3498db;
+    border-left: 12px solid #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .custom-spinner.loading {
+    opacity: 0;
+  }
+  
+  .content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .kickass-loading-screen.loaded .content {
+    opacity: 1;
+  }
+  

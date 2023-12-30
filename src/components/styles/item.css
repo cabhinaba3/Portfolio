@@ -1,0 +1,24 @@
+.item-ul{
+  list-style: none;
+  padding: 0;
+  margin: 2em;
+}
+
+.item-ul .item-li{
+  padding: 0 0;
+  position: relative;
+}
+  
+.item-ul .item-li::before {
+  margin-right: 1em;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #060606;
+  font-size: 1.2em;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  position: absolute;
+  left: 0;
+}
+  

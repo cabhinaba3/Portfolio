@@ -1,0 +1,32 @@
+/* Style the navbar container */
+.d-flex {
+    background-color: transparent;
+    /* padding:  0; */
+  }
+  .navbar-brand {
+    color: #040000;
+    font-size: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  .navbar-nav .nav-link.active {
+    border-bottom: 2px solid purple;
+  }
+  .navbar-nav .dropdown-menu {
+    background-color: whitesmoke
+  }
+  .navbar-nav .dropdown-menu .dropdown-item {
+    color: black; /* Text color */
+  }
+  .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #555; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
+  /* Style the toggler icon color */
+  .navbar-toggler-icon {
+    background-color: #fff; /* Toggler icon color */
+  }
+  
