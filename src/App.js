@@ -21,10 +21,10 @@ function App() {
     <>
       <Router>
         <LoadingScreen period={1500}/>
-        <Header title="Portfolio"/>
-        <Home/>
+        <Header title="Abhinaba Chakraborty"/>
+        {/* <Home/> */}
         <Routes>
-          <Route exact path="/"/>
+          <Route exact path="/Portfolio" element={<Home/>}/>
           <Route exact path="/education" element={<Education/>}/>
           <Route exact path="/experience" element={<Experience/>}/>
           <Route exact path='/skills' element={<Skills/>}/>

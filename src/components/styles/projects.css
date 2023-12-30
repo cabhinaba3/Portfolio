@@ -7,16 +7,14 @@
     font-family: 'Arial', sans-serif;
   }
   
-  h1 {
-    text-align: center;
-  }
-  
-  ul {
+  #project-ul{
     list-style-type: none;
     padding: 0;
   }
   
   .project-item {
+    width: 20em;
+    height: auto;
     margin-bottom: 1em;
     padding: 1rem;
     border: none;
@@ -28,11 +26,11 @@
     transform: scale(1.05);
   }
   
-  h2 {
-    margin-bottom: 0.2em;
+  .project-h2{
+    margin-bottom: 0.1em;
   }
   
-  a {
+  .project-link{
     display: block;
     color: #3498db;
     text-decoration: none;

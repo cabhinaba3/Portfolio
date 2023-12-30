@@ -62,4 +62,16 @@ body {
       opacity: 0;
     }
   }
-  
+  .special-container{
+    margin: 4em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 10em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .home-p{
+    line-height: 200%;
+  }

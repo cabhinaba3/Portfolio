@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import SideNav from './Sidenav';
 import EducationItem from './Education-item';
+import './styles/home.css'
+import ScrollToTop from './scroll-top';
 const Education = () => {
     const [index, setCurrentEducation] = useState(0);
 
@@ -38,10 +40,22 @@ const Education = () => {
         }
     ];
   return (
-    <div className="container m-5 d-flex">
-        <SideNav data={educationData} _setCurrentEducation={setCurrentEducation}/>
-        <EducationItem data={educationData[index]} />
-    </div>
+    <>
+        <ScrollToTop/>
+        <div className="container justify-content-center special-container">
+            <p className="home-p">
+                I completed my <strong>B.E in Electrical Engineering</strong>from Jadavpur University and <strong>M.Tech in CS</strong> from Indian Statistical
+                Institute, Kolkata. During my master's I went to attended <strong>KU, Leuven</strong> for my thesis. It has been a wonderful experience. 
+                My master's thesis was done in colaboration with IMEC and KU, Leuven. 
+                <br/>
+                Recently I got a PhD offer from Ghent University and will be joining there soon.
+            </p>
+        </div>
+        <div className="container m-5 d-flex">
+            <SideNav data={educationData} _setCurrentEducation={setCurrentEducation}/>
+            <EducationItem data={educationData[index]} />
+        </div>
+    </>
   );
 };
 

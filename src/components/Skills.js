@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './styles/skills.css'
 import SideNav from "./Sidenav";
+import ScrollToTop from "./scroll-top";
 export default function Skills(){
   const [index, setCurrentEducation] = useState(0);
   const skilltype = [
@@ -76,6 +77,7 @@ export default function Skills(){
   ]
     return (
       <>
+        <ScrollToTop/>
         <div className="container m-1 d-flex">
           <SideNav data={skilltype} _setCurrentEducation={setCurrentEducation}/>
           <div className="custom-dev">

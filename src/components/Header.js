@@ -8,7 +8,7 @@ export default function Header(props){
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
             <div>
-                <Link className="navbar-brand" to="/">{props.title}</Link>
+                <Link className="navbar-brand" to="/Portfolio">{props.title}</Link>
                 <p>Designing Dreams, One Pixel at a Time.</p>
             </div>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

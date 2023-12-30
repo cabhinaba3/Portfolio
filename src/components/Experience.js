@@ -3,6 +3,8 @@ import { useState } from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import SideNav from './Sidenav';
 import ExperienceItem from './Experience-item';
+import ScrollToTop from './scroll-top';
+
 const Experience = () => {
     const [index, setCurrentEducation] = useState(0);
 
@@ -40,10 +42,13 @@ const Experience = () => {
         }
     ];
   return (
-    <div className="container mt-2 d-flex">
-        <SideNav data={educationData} _setCurrentEducation={setCurrentEducation}/>
-        <ExperienceItem data={educationData[index]} />
-    </div>
+    <>
+        <ScrollToTop/>
+        <div className="container mt-2 d-flex">
+            <SideNav data={educationData} _setCurrentEducation={setCurrentEducation}/>
+            <ExperienceItem data={educationData[index]} />
+        </div>
+    </>
   );
 };
 

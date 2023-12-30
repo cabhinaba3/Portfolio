@@ -1,7 +1,8 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #201d1d;
+    max-width: 75%;
+    color: white;
+    /* padding: 10px 0; */
     text-align: center;
   }
   
@@ -12,5 +13,24 @@
   
   .footer-p {
     margin: 0;
+    padding-bottom: 1em;
+  }
+
+  .btn-outline-secondary{
+    background-color: transparent;
+    border: none;
+    text-emphasis-color: rgb(242, 242, 242);
+    margin: 1em;
+    padding: 1em;
+    animation: transform 10s ease-in-out;
+  }
+  .contact-item-btn:hover{
+    transform: scale(1.5);
+    background-color: transparent;
+    box-shadow: inset;
+  }
+  #footer-contact-h5{
+    padding-top: 1em;
+    color: white;
   }
   
