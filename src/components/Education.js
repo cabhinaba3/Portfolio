@@ -43,6 +43,7 @@ const Education = () => {
     <>
         <ScrollToTop/>
         <div className="container justify-content-center special-container">
+            <h1>Education</h1>
             <p className="home-p">
                 I completed my <strong>B.E in Electrical Engineering</strong>from Jadavpur University and <strong>M.Tech in CS</strong> from Indian Statistical
                 Institute, Kolkata. During my master's I went to attended <strong>KU, Leuven</strong> for my thesis. It has been a wonderful experience. 
@@ -51,7 +52,7 @@ const Education = () => {
                 Recently I got a PhD offer from Ghent University and will be joining there soon.
             </p>
         </div>
-        <div className="container m-5 d-flex">
+        <div className="container justify-content-center m-3 d-flex">
             <SideNav data={educationData} _setCurrentEducation={setCurrentEducation}/>
             <EducationItem data={educationData[index]} />
         </div>

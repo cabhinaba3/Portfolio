@@ -3,16 +3,6 @@ import { Link } from "react-router-dom";
 import './styles/item.css'
 export default function EducationItem(props){
     const _data = props.data;
-    const containerStyle = {
-        width: '100em',
-        height: 'auto',
-        padding: '1rem',
-        backgroundColor: 'transparent',
-        borderRadius: '2rem',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
-        textAlign: 'left',
-      };
-    
       const headingStyle = {
         fontSize: '2em',
         color: '#333',
@@ -24,7 +14,7 @@ export default function EducationItem(props){
         color: '#555',
       };
     return (
-        <div className="container" style={containerStyle}>
+        <div className="item-container">
             <h1 style={headingStyle}>{_data.institution}</h1>
             <p style={paragraphStyle}>{_data.degree}</p>
             <p style={paragraphStyle}>{_data.date}</p>
