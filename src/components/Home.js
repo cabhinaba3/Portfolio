@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import TypingEffect from 'react-typing-effect';
 import './styles/home.css'
 import profilePic from './assets/profile-pic.jpeg'
@@ -9,7 +10,6 @@ export default function Home(){
   const [showAnimation, setShowAnimation] = useState(false);
 
   useEffect(() => {
-    // Trigger animation after a short delay (e.g., 500ms)
     const animationTimeout = setTimeout(() => {
       setShowAnimation(true);
     }, 1);
@@ -53,8 +53,27 @@ export default function Home(){
             </ol>
             <hr/>
             <i>Recently I got an offer from <strong>University of Ghent</strong>for a PhD position. I will be joining there soon.</i>
+            <hr/>
           </p>
         </div>
+      </div>
+      <div className="container justify-content-center special-container">
+          <div className='container'>
+            I have been active on different coding platforms, occasionally solving coding problems for fun.
+          </div>
+          <div className="container d-flex flex-wrap">
+            <div className='code-profile-div'>
+              <Link to="" className="code-profile-div-anchor">
+                GeeksforGeeks
+              </Link>
+            </div>
+            <div className='code-profile-div'>
+                <Link to="" className="code-profile-div-anchor">LeetCode</Link>
+            </div>
+            <div className='code-profile-div'>
+                <Link to="" className="code-profile-div-anchor">CodingNinjas</Link>
+            </div>
+          </div>
       </div>
       </>
     )

@@ -4,11 +4,14 @@ import ScrollToTop from './scroll-top';
 // import './styles/item.css'
 const Books = () => {
     const books = {
+        "Rust":[
+            {name:"Rust Programming Language",link:"https://www.google.com/search?q=rust+programming+language+book+pdf&sca_esv=594941850&rlz=1C5CHFA_enIN1068IN1068&sxsrf=AM9HkKkc2RkkXF4BjLHem7gNYHH5Z00NBA%3A1704136204559&ei=DA6TZYXbIYmXseMP9ZWxuAo&ved=0ahUKEwiFkfyI8ryDAxWJS2wGHfVKDKcQ4dUDCBA&uact=5&oq=rust+programming+language+book+pdf&gs_lp=Egxnd3Mtd2l6LXNlcnAiInJ1c3QgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2UgYm9vayBwZGYyChAjGIAEGIoFGCcyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSNEHUPIBWIYHcAF4AZABAJgBiAGgAeQCqgEDMS4yuAEDyAEA-AEBwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AECwgIFEAAYgATCAgYQABgWGB7iAwQYACBBiAYBkAYQugYGCAEQARgJugYGCAIQARgI&sclient=gws-wiz-serp"}
+        ],
         "System Design": [
             {name: "Designing Data Intensive Applications",link: "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"},
         ],
         "Distributed Computing":[
-            {name:"Distributed Algorithms",link:"#"}
+            {name:"Distributed Algorithms by Lancy Lynch",link:"#"}
         ],
         "Software Testing":[
             {name:"The art of software testing",link:"#"}
@@ -35,11 +38,13 @@ const Books = () => {
         <div className="container justify-content-center">
             <h1>Books</h1>
             <p>I read books every month around various topics that interests me.</p>
+            <hr/>
+            <p>I am currently learning Rust. Any suggestion please do tell me. Thanks</p>
         </div>
 
-        <div className="container d-inline-flex flex-wrap">
+        <div className="container d-flex flex-wrap">
             {bookCategories.map((cat,index)=>(
-                <div className="m-2">
+                <div className="book-item-container m-2">
                     <h3>{cat}</h3>
                     <ul className='item-ul'>
                         {books[cat].map((book,i)=>(

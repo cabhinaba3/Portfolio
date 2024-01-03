@@ -45,10 +45,22 @@
 
   .nav-item{
     animation: transform 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
   .nav-item:hover{
     transform: scale(1.2);
   }
+  @keyframes transform {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
   .header-p{
     animation: transform 1s ease-in-out;
   }

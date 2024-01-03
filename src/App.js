@@ -14,6 +14,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import CommingSoon from './components/coming-soon';
 import Books from './components/Books';
+import Papers from './components/Papers';
 
 function App() {
   const homePath = "/Portfolio";
@@ -30,6 +31,7 @@ function App() {
           <Route exact path={homePath+"/skills"} element={<Skills/>}/>
           <Route exact path={homePath+"/projects"} element={<Projects/>}/>
           <Route exact path={homePath+"/books"} element={<Books/>}/>
+          <Route exact path={homePath+"/papers"} element={<Papers/>}/>
           <Route exact path='*' element={<CommingSoon/>}/>
         </Routes>
         <Footer />
