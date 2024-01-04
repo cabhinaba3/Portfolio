@@ -1,6 +1,10 @@
 import React from 'react';
 import './styles/books.css';
 import ScrollToTop from './scroll-top';
+import { Link } from 'react-router-dom';
+import graphppt_1 from './assets/Graph Algo Presentation 1.pdf'
+import graphppt_2 from './assets/Graph Algo Presentation 2.pdf'
+
 // import './styles/item.css'
 const Papers = () => {
     const books = {
@@ -17,7 +21,11 @@ const Papers = () => {
             {name: "A Tree Clock Data Structure for Casual Ordering in Concurrent Execution",link: "#"},
         ],
         "Geometry and Graph Algorithms":[
-            {name:"The art of software testing",link:"#"}
+            {name:"Minimum diameter spanning trees and related problems",link:"https://www.researchgate.net/publication/220617691_Minimum_Diameter_Spanning_Trees_and_Related_Problems"},
+            {name:"On the value of a random minimum spanning tree problem,” Discrete Applied Mathematics",link:"#"},
+            {name:"On frieze’s (3) limit for lengths of minimal spanning trees",link:"#"},
+            {name:"On random minimum length spanning trees,",link:"#"},
+            {name:"Critical random graphs and the structure of a minimum spanning tree",link:"#"}
         ]
     }
     const bookCategories = Object.keys(books);
@@ -47,11 +55,14 @@ const Papers = () => {
         <div className="container flex justify-content-center">
             <p>Based on the papers I gave some presentations for various occasion. The <i>ppts</i> for those are listed belows:</p>
             <ul className="item-ul">
-                <li className="item-li">Directed Testing</li>
-                <li className="item-li">Bounder Diameter Minimum Spanning Tree</li>
-                <li className="item-li">Bounded Depth and Bounded Diameter Spanning Tree</li>
+                <li className="item-li">Directed Testing (will be uploaded later)</li>
+                <li className="item-li"><Link to={graphppt_1} target='_blank'>Bounder Diameter Minimum Spanning Tree</Link></li>
+                <li className="item-li"><Link to={graphppt_2} target='_blank'>Bounded Depth and Bounded Diameter Spanning Tree</Link></li>
             </ul>
         </div>
+        <hr/>
+        Some of the links may not work. You can contant me for those links. Happy Surfing.
+        <hr/>
 
     </div>
   );
