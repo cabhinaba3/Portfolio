@@ -12,8 +12,8 @@ export default function Header(props){
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                 <div className="container justify-content-center" id="header-prop-title">
-                    <Link className="navbar-brand" to="/Portfolio">{props.title}
-                        <i class="fa-solid fa-house-user fa-shake fa-2xl" id="header-home"></i>
+                    <Link className="navbar-brand" to={props.homePath}>{props.title}
+                        {/* <i class="fa-solid fa-house-user fa-shake fa-2xl" id="header-home"></i> */}
                     </Link>
                     <p>Designing Dreams, One Pixel at a Time.</p>
                 </div>
@@ -37,11 +37,11 @@ export default function Header(props){
                             <strong>Skills</strong>
                         </Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link className="nav-link active" to={homePath+"/projects"}>
                             <strong>Projects</strong>
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="nav-item dropdown">
                         <Link className="nav-link active dropdown-toggle" to={homePath+"/bookself"} role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <strong>My Self</strong>

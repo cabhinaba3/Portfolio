@@ -26,7 +26,7 @@ export default function Home(){
         <div className="profile-pic-container">
           <img src={profilePic} alt="Profile Pic" className="profile-pic"/>
         </div>
-        <div className={`profile-paragraph ${showAnimation ? 'show' : ''}`}>
+        {/* <div className={`profile-paragraph ${showAnimation ? 'show' : ''}`}>
           <TypingEffect
             speed={25}
             text={[
@@ -36,7 +36,7 @@ export default function Home(){
               "Curious about theoretical aspects of computer science."
             ]}
           />
-        </div>
+        </div> */}
         <div className="container justify-content-center special-container" id='home-container'>
           <h2>Hey, I am Abhinaba</h2>
           <p className='home-p' id='home-p'>
@@ -57,7 +57,7 @@ export default function Home(){
           </p>
         </div>
       </div>
-      <div className="container justify-content-center special-container">
+      {/* <div className="container justify-content-center special-container">
           <div className='container'>
             I have been active on different coding platforms, occasionally solving coding problems for fun.
           </div>
@@ -74,7 +74,7 @@ export default function Home(){
                 <Link to="" className="code-profile-div-anchor">CodingNinjas</Link>
             </div>
           </div>
-      </div>
+      </div> */}
       </>
     )
 }
