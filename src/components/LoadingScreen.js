@@ -14,7 +14,7 @@ const LoadingScreen = (props) => {
   }, []);
 
   return (
-    <div>
+    <div className='loading-container'>
       {loading ? (
         <div className="loading-screen align-items-center justify-content-center vh-100">
           <div className="custom-spinner spinner1"></div>

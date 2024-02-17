@@ -3,6 +3,21 @@
   margin: 0;
   padding: 0;
 }
+.loading-container{
+    animation: fade 2s linear;
+    transition: fade 2s ease-in-out;
+}
+@keyframes fade{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
 .loading-screen {
     display: flex;
     opacity: 1;
@@ -15,51 +30,54 @@
   }
   
   .custom-spinner {
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    animation: spin 1s linear infinite;
+    margin-top: -5%;
+    margin-left: -5%;
     opacity: 1;
-    transition: opacity 1s ease-in-out;
 }
 
 .spinner1 {
-    border-top: 12px solid #27282a;
-    border-right: 12px solid #000000;
-    border-bottom: 12px solid #353b3f;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
     border-left: 12px solid #201c1c;
+    animation: spin 1s linear infinite;
+    transition: opacity 1s ease-in-out;
 }
-
-.spinner2 {
-    border-top: 12px solid #fff;
-    border-right: 12px solid #fff;
-    border-bottom: 12px solid #fff;
-    border-left: 12px solid #141718;
-}
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
+        border-left: 12px double blue;
+    }
+    50%{
+        border-left: 6px double purple;
     }
     100% {
         transform: rotate(360deg);
+        border-left: 12px solid black;
     }
 }
-
-.custom-spinner.loading {
-    opacity: 0;
+.spinner2{
+    width: 150px;
+    height: 150px;
+    top: 47.5%;
+    left: 48%;
+    border-right: 12px solid #000000;
+    animation: spin2 1.5s linear infinite;
+    transition: opacity 1.5s ease-in-out;
 }
-
-.content {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.kickass-loading-screen.loaded .content {
-    opacity: 1;
+@keyframes spin2{
+    0%{
+        transform: rotate(360deg);
+        border-right:12px double purple;
+    }
+    50%{
+        border-right: 6px double blue
+    }
+    100%{
+        transform: rotate(0deg);
+        border-right: 12px solid black;
+    }
 }
