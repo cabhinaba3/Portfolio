@@ -18,11 +18,11 @@ export default function EducationItem(props){
             <h1 style={headingStyle}>{_data.institution}</h1>
             <p style={paragraphStyle}>{_data.degree}</p>
             <p style={paragraphStyle}>{_data.date}</p>
-            <ol className="item-ul">
+            {/* <ol className="item-ul">
                 {_data.courses.map((course, index)=>(
                     <li className="item-li"><p style={paragraphStyle}>{course}</p></li>
                 ))}
-            </ol>
+            </ol> */}
             <Link to={_data.thesis.link}>{_data.thesis.text}</Link>
         </div>
     )

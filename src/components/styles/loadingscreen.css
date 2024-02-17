@@ -1,50 +1,65 @@
 /* KickassLoadingScreen.css */
-
-.kickass-loading-screen {
+*{
+  margin: 0;
+  padding: 0;
+}
+.loading-screen {
     display: flex;
-    align-items: center;
-    justify-content: center;
     opacity: 1;
     transition: opacity 4s ease-in-out;
-    background-color: #c8d2dc; /* Set background color */
+    background-color: rgb(206, 213, 220); /* Set background color */
   }
   
-  .kickass-loading-screen.loading {
+  .loading-screen.loading {
     opacity: 0;
   }
   
   .custom-spinner {
-    border-top: 12px solid #3498db;
-    border-right: 12px solid #3498db;
-    border-bottom: 12px solid #3498db;
-    border-left: 12px solid #fff;
-    border-radius: 50%;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
     animation: spin 1s linear infinite;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-  }
-  
-  @keyframes spin {
+}
+
+.spinner1 {
+    border-top: 12px solid #27282a;
+    border-right: 12px solid #000000;
+    border-bottom: 12px solid #353b3f;
+    border-left: 12px solid #201c1c;
+}
+
+.spinner2 {
+    border-top: 12px solid #fff;
+    border-right: 12px solid #fff;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid #141718;
+}
+
+@keyframes spin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  .custom-spinner.loading {
+}
+
+.custom-spinner.loading {
     opacity: 0;
-  }
-  
-  .content {
+}
+
+.content {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
-  
-  .kickass-loading-screen.loaded .content {
+}
+
+.kickass-loading-screen.loaded .content {
     opacity: 1;
-  }
-  
+}

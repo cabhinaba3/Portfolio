@@ -6,7 +6,6 @@ import './styles/home.css'
 import ScrollToTop from './scroll-top';
 const Education = () => {
     const [index, setCurrentEducation] = useState(0);
-
     const educationData = [
         {
             institution: "Katholieke Universiteit, Leuven",

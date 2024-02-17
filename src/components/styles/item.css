@@ -28,8 +28,8 @@
   height: auto;
   padding: 1rem;
   background-color: transparent;
-  border-radius: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* border-radius: 2rem; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
   text-align: left;
 }
   
