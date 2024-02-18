@@ -30,7 +30,7 @@ function App() {
   const homePath = "";
   return (
     <>
-      <LoadingScreen period={1800}/>
+      <LoadingScreen period={2000}/>
       <div className='container' id='main-container'>
         <Router hashType='hashbang'>
           <Header title="Abhinaba Chakraborty" homePath={homePath}/>

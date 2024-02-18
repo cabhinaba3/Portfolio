@@ -1,3 +1,18 @@
 * {
     margin: 0.5%;
 }
+#main-container{
+    animation: container-fade 2s linear;
+    transition: container-fade 2s ease-in-out;
+}
+@keyframes container-fade{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
