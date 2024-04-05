@@ -1,7 +1,7 @@
-.footer {
-    background-color: #201d1d;
+#footer-container{
+    background-color: transparent;
     max-width: 75%;
-    color: white;
+    color: indigo;
     /* padding: 10px 0; */
     text-align: center;
   }

@@ -6,6 +6,19 @@ import ScrollToTop from './scroll-top';
 import { Link } from 'react-router-dom';
 
 export default function Home(props){
+
+    const projects = [
+      {
+        name: "formatflick",
+        link: "#",
+        description: "A python module to file extensions"
+      },
+      {
+        name: "Search Engine",
+        link:"#",
+        description:"A implementation of search engine in pylucene"
+      }
+    ]
     const socials=[{name:"GitHub",link:"https://github.com/cohitherewer"},
     {name:"Facebook",link:"#"},{name:"LinkedIn",link:"https://www.linkedin.com/in/cabhisr4/"}];
     return (
@@ -20,9 +33,14 @@ export default function Home(props){
           <p className='home-p' id='home-p'>
             As an engineer, passionate about Computer Architecture, Advanced Architectures, Advanced Networks. In 2024 I took a chance and left my Job for a Phd at University of Ghent.
             <br/>
-            I keep diving into engineering details. To put my details my learnings into practice I keep building things on side. One of them is,
+            I keep diving into engineering details. To put my details my learnings into practice I keep building things on side. Some of them are,
             <ol className='item-ol'>
-              <li className=''><strong>formatflick</strong>:- A python module to convert file extensions</li>
+              {projects.map((project,index)=>(
+                <li className=''>
+                  <Link to={project.link}><strong>{project.name}:</strong></Link> {project.description}
+                </li>
+              ))
+              }
             </ol>
             I completed my B.E in Electrical Engineering from <Link className="" to={"http://www.jaduniv.edu.in/"}>Jadavpur University</Link>
             <br/>

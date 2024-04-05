@@ -25,7 +25,9 @@ const Footer = () => {
   ]
   return (
     <footer className="container footer justify-content-center">
-      <div class="container">
+      <hr/>
+      <hr/>
+      {/* <div class="container">
         <div class="contact-section">
           <div class="contact-details d-flex flex-wrap justify-content-center">
             {contactDetails.map((contact,i)=>(
@@ -37,10 +39,10 @@ const Footer = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container" id="footer-container">
-        <p className='footer-p'>&copy; {currentYear} Abhinaba Chakraborty. All rights reserved.</p>
+        <p className='footer-p'>&copy; {currentYear} Abhinaba Chakraborty.</p>
       </div>
     </footer>
   );

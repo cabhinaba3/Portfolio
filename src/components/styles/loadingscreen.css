@@ -3,21 +3,6 @@
   margin: 0;
   padding: 0;
 }
-/* .loading-container{
-    animation: fade 2s linear;
-    transition: fade 2s ease-in-out;
-}
-@keyframes fade{
-    0%{
-        opacity: 100%;
-    }
-    50%{
-        opacity: 50%;
-    }
-    100%{
-        opacity: 0%;
-    }
-} */
 .loading-screen {
     display: flex;
     opacity: 1;
@@ -79,5 +64,28 @@
     100%{
         transform: rotate(0deg);
         border-right: 12px solid black;
+    }
+}
+.spinner3{
+    width: 200px;
+    height: 200px;
+    top: 44%;
+    left: 46%;
+    border-top: 12px solid #000000;
+    animation: spin3 1.5s linear infinite;
+    transition: opacity 1.5s ease-in-out;
+}
+@keyframes spin3{
+    0%{
+        transform: rotate(-180deg);
+        border-top:12px double purple;
+    }
+    50%{
+        transform: rotate(0);
+        border-top: 6px double blue
+    }
+    100%{
+        transform: rotate(180deg);
+        border-top: 12px solid black;
     }
 }

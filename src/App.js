@@ -45,7 +45,7 @@ function App() {
             <Route exact path={homePath+"/Resume"} element={<Resume/>}/>
             <Route exact path='*' element={<CommingSoon/>}/>
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       </div>
     </>

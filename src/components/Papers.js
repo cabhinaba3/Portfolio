@@ -26,6 +26,9 @@ const Papers = () => {
             {name:"On frieze’s (3) limit for lengths of minimal spanning trees",link:"#"},
             {name:"On random minimum length spanning trees,",link:"#"},
             {name:"Critical random graphs and the structure of a minimum spanning tree",link:"#"}
+        ],
+        "Computer Architectures":[
+            {name:"In-Datacenter Performance Analysis of a Tensor Processing Unit",link:"https://arxiv.org/pdf/1704.04760.pdf"}
         ]
     }
     const bookCategories = Object.keys(books);
