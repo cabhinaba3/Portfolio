@@ -27,7 +27,7 @@ const Papers = () => {
             {name:"On random minimum length spanning trees,",link:"#"},
             {name:"Critical random graphs and the structure of a minimum spanning tree",link:"#"}
         ],
-        "Computer Architectures":[
+        "Computer Architecture":[
             {name:"In-Datacenter Performance Analysis of a Tensor Processing Unit",link:"https://arxiv.org/pdf/1704.04760.pdf"}
         ]
     }
