@@ -10,12 +10,12 @@ export default function Home(props){
     const projects = [
       {
         name: "formatflick",
-        link: "#",
+        link: "https://github.com/cohitherewer/formatflick-engine",
         description: "A python module to file extensions"
       },
       {
         name: "Search Engine",
-        link:"#",
+        link:"https://github.com/cohitherewer/Search-Engine",
         description:"A implementation of search engine in pylucene"
       }
     ]
@@ -46,7 +46,7 @@ export default function Home(props){
             <br/>
             M.Tech CS from <Link className='' to={"https://www.isical.ac.in/"}>Indian Statistical Institute, Kolkata</Link>. 
             <br/>
-            I colaborated with <Link className='' to={"#"}>IMEC,Belgium</Link> for my <Link className=''to={'#'}>master's thesis.</Link>
+            I colaborated with <Link className='' to={"https://www.imec-int.com/en"}>IMEC,Belgium</Link> for my <Link className=''to={'#'}>master's thesis.</Link>
             <br/>
             I am currently doing my PhD at <strong>ID Lab</strong> of <i><Link to={"https://www.ugent.be/"}>Universiteit Gent</Link></i>
             <hr/>
