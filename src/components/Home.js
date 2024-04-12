@@ -47,8 +47,8 @@ export default function Home(props){
             M.Tech CS from <Link className='' to={"https://www.isical.ac.in/"}>Indian Statistical Institute, Kolkata</Link>. 
             <br/>
             I colaborated with <Link className='' to={"#"}>IMEC,Belgium</Link> for my <Link className=''to={'#'}>master's thesis.</Link>
-            <hr/>
-            <i>Recently I got an offer from <strong>University of Ghent</strong> for a PhD position. I will be joining there soon.</i>
+            <br/>
+            I am currently doing my PhD at <strong>ID Lab</strong> of <i><Link to={"https://www.ugent.be/"}>Universiteit Gent</Link></i>
             <hr/>
             You can find me on my socials below,
           </p>

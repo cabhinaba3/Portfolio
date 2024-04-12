@@ -26,7 +26,6 @@ const Footer = () => {
   return (
     <footer className="container footer justify-content-center">
       <hr/>
-      <hr/>
       {/* <div class="container">
         <div class="contact-section">
           <div class="contact-details d-flex flex-wrap justify-content-center">
