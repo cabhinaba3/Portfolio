@@ -3,23 +3,29 @@ import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import './styles/header.css'
 import Tabs from '@mui/material/Tabs';
+import { Button } from "@mui/material";
 import { Tab } from "@mui/material";
+import Drawer from '@mui/joy/Drawer';
 import CircularProgress from '@mui/material/CircularProgress';
 import Backdrop from '@mui/material/Backdrop';
 import { useNavigate } from 'react-router-dom';
 import Home from "./Home";
 import Experience from "./Experience";
+import ProjectList from "./Projects";
 import Skills from "./Skills";
 import Books from "./Books";
 import Papers from "./Papers";
 import Resume from "./resume";
+import Colaborate from "./colaborate";
 
 export default function Header(props){
     const homePath=props.homePath;
     const options=[
         {name:"Home",link:<Home resumeLink={homePath+"/Resume"}/>},
-        {name:"Experience",link:<Experience/>},
-        {name:"Skills",link:<Skills/>},
+        {name: "Projects",link:<ProjectList/>},
+        // {name: "Collaborate",link:<Colaborate/>}
+        // {name:"Experience",link:<Experience/>},
+        // {name:"Skills",link:<Skills/>},
         // {name:"Books",link:<Books/>},
         // {name:"Papers",link:<Papers/>}
     ];
@@ -28,7 +34,7 @@ export default function Header(props){
     }
     const [selectedIndex, setSelectedIndex] = React.useState(0);
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [open, setOpen] = React.useState(false);
     const delay = (ms) => {
         return new Promise((resolve) => setTimeout(resolve, ms));
@@ -47,7 +53,7 @@ export default function Header(props){
     }
     return (
         <>
-            <div className="sticky-top mt-3 d-flex justify-content-around" id="header-container">
+            <div className="sticky-top mt-3 d-flex justify-content-center" id="header-container">
                 <Tabs 
                     value={selectedIndex}
                     onChange={handleMenuItemClick}

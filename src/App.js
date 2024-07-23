@@ -7,16 +7,8 @@ import {
 } from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './components/Home';
-// import Education from './components/Education';
-import LoadingScreen from './components/LoadingScreen'
-import Experience from './components/Experience';
-import Skills from './components/Skills';
 // import Projects from './components/Projects';
 import CommingSoon from './components/coming-soon';
-import Books from './components/Books';
-import Papers from './components/Papers';
-import Resume from './components/resume';
 import { pdfjs } from 'react-pdf';
 
 // important pdf reader to work
@@ -30,7 +22,6 @@ function App() {
   const homePath = "";
   return (
     <>
-      {/* <LoadingScreen period={2000}/> */}
       <div className='container' id='main-container'>
         <Router hashType='hashbang'>
           <Routes>
@@ -43,7 +34,7 @@ function App() {
             {/* <Route exact path={homePath+"/books"} element={<Books/>}/> */}
             {/* <Route exact path={homePath+"/papers"} element={<Papers/>}/> */}
             {/* <Route exact path={homePath+"/Resume"} element={<Resume/>}/> */}
-            <Route exact path='/*' element={<CommingSoon/>}/>
+            <Route exact path='*' element={<CommingSoon/>}/>
           </Routes>
           <Footer />
         </Router>
