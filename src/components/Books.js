@@ -1,6 +1,4 @@
 import React from 'react';
-import './styles/books.css';
-import ScrollToTop from './scroll-top';
 // import './styles/item.css'
 const Books = () => {
     const books = {
@@ -34,7 +32,6 @@ const Books = () => {
     const bookCategories = Object.keys(books);
   return (
     <div className="container book-container justify-content-center">
-        <ScrollToTop/>
         <div className="container justify-content-center">
             <h1>Books</h1>
             <p>I read books every month around various topics that interests me.</p>

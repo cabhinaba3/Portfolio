@@ -4,7 +4,7 @@ import './styles/colaborate.css'
 import Tooltip from '@mui/material/Tooltip';
 const Colaborate = () => {
   // const [loading, setLoading] = useState(true);
-  const email = "cabhinaba3@gmail.com";
+  const email = "abhinaba7cr@gmail.com";
   const subject = "Discussion on ...";
   const body = "Body of the email";
 
@@ -21,7 +21,7 @@ const Colaborate = () => {
   return (
     <div className='container'>
       <p className='home-p'>
-      I primarily operate in the domain of computing systems. If you believe we have common ground to discuss, feel free to email me at <code>cabhinaba3@gmail.com</code>. I'm always open to a conversation.
+      I primarily operate in the domain of computing systems. If you believe we have common ground to discuss, feel free to email me at <code>abhinaba7cr@gmail.com</code>. I'm always open to a conversation.
       </p>
       <div className='container'>
         <div>

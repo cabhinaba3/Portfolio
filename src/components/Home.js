@@ -74,7 +74,7 @@ export default function Home(props){
           <h1>Hi, I am Abhinaba</h1>
           <p className='home-p' id='home-p'>
             I am a PhD student in the Information Technology Department at <Link to={"https://www.ugent.be/"}>Universiteit Ghent</Link>. My research focues on Cloud and Network Orchestration Techniques.
-            In this regard my recent assignment focues on Edge computing, effecient resource allocation in context of vision applications.
+            In this regard my recent assignment focues on edge computing, effecient resource allocation in context of vision applications.
             Currently I am studying computer vision, deep learning compilation and different energy efficient architectures.
             I completed my master's degree from <Link className='' to={"https://www.isical.ac.in/"}>ISI, Kolkata</Link> and B.E from <Link className="" to={"http://www.jaduniv.edu.in/"}>Jadavpur University</Link>. <br/>
             Before joining PhD, I was a software engineer at <Link className='' to={"https://predigle.com/"}>Predigle, India</Link>. I was an international scholar at <Link className='' to={"https://www.imec-int.com/en"}>imec, Belgium</Link> (master's thesis) and interned at <Link to={"https://www.airtel.in/"}>Airtel, India</Link>.

@@ -1,6 +1,4 @@
 import React from 'react';
-import './styles/books.css';
-import ScrollToTop from './scroll-top';
 import { Link } from 'react-router-dom';
 import graphppt_1 from './assets/Graph Algo Presentation 1.pdf'
 import graphppt_2 from './assets/Graph Algo Presentation 2.pdf'
@@ -34,7 +32,6 @@ const Papers = () => {
     const bookCategories = Object.keys(books);
   return (
     <div className="container book-container justify-content-center">
-        <ScrollToTop/>
         <div className="container justify-content-center">
             <h1>Papers</h1>
             <p>I read papers every week around various topics that interests me. Currently

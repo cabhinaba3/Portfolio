@@ -8,7 +8,6 @@ import { Tab } from "@mui/material";
 import Drawer from '@mui/joy/Drawer';
 import CircularProgress from '@mui/material/CircularProgress';
 import Backdrop from '@mui/material/Backdrop';
-import { useNavigate } from 'react-router-dom';
 import Home from "./Home";
 import Experience from "./Experience";
 import ProjectList from "./Projects";

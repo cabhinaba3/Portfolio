@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/comming-soon.css'
 
 const ComingSoon = () => {
   return (
