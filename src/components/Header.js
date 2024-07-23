@@ -17,11 +17,12 @@ import Resume from "./resume";
 export default function Header(props){
     const homePath=props.homePath;
     const options=[
-        {name:"Home",link:<Home resumeLink={"/resume"}/>},
+        {name:"Home",link:<Home resumeLink={homePath+"/Resume"}/>},
         {name:"Experience",link:<Experience/>},
         {name:"Skills",link:<Skills/>},
-        {name:"Books",link:<Books/>},
-        {name:"Papers",link:<Papers/>}];
+        // {name:"Books",link:<Books/>},
+        // {name:"Papers",link:<Papers/>}
+    ];
     for(let i=0;i<options.length;i++){
         console.log(options[i],i);
     }

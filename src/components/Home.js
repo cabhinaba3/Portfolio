@@ -42,6 +42,7 @@ export default function Home(props){
     const navigate = useNavigate();
     const handleDownload = async () => {
       setLoading(true);
+      // console.log(props.resumeLink);
       await setTimeout(() =>{
         navigate(props.resumeLink)
         setLoading(false);

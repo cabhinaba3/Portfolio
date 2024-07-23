@@ -33,8 +33,8 @@ function App() {
       {/* <LoadingScreen period={2000}/> */}
       <div className='container' id='main-container'>
         <Router hashType='hashbang'>
-          <Header title="Abhinaba Chakraborty" homePath={homePath} />
           <Routes>
+            <Route exact path={homePath} element={<Header title="Abhinaba Chakraborty" homePath={homePath} />}/>
             {/* <Route exact path={homePath} element={<Home resumeLink={homePath+"/resume"}/>}/> */}
             {/* <Route exact path={homePath+"/education"} element={<Education/>}/> */}
             {/* <Route exact path={homePath+"/experience"} element={<Experience/>}/> */}
@@ -43,7 +43,7 @@ function App() {
             {/* <Route exact path={homePath+"/books"} element={<Books/>}/> */}
             {/* <Route exact path={homePath+"/papers"} element={<Papers/>}/> */}
             {/* <Route exact path={homePath+"/Resume"} element={<Resume/>}/> */}
-            {/* <Route exact path='*' element={<CommingSoon/>}/> */}
+            <Route exact path='/*' element={<CommingSoon/>}/>
           </Routes>
           <Footer />
         </Router>

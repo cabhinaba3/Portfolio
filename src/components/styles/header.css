@@ -1,6 +1,7 @@
 #header-container{
-  background-color:transparent;
+  background-color:rgb(237, 238, 233);
   justify-self: center;
+  padding: 1%;
 }  
 
 .MuiButtonGroup-contained {
