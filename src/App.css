@@ -1,7 +1,8 @@
 * {
-    margin: 0.5%;
+    margin: 0;
+    padding: 0;
 }
-#main-container{
+/* #main-container{
     animation: container-fade 2s linear;
     transition: container-fade 2s ease-in-out;
 }
@@ -15,4 +16,4 @@
     100%{
         opacity: 100%;
     }
-}
+} */

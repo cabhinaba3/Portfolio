@@ -2,29 +2,78 @@ import React from "react";
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import './styles/header.css'
+import Tabs from '@mui/material/Tabs';
+import { Tab } from "@mui/material";
+import CircularProgress from '@mui/material/CircularProgress';
+import Backdrop from '@mui/material/Backdrop';
+import { useNavigate } from 'react-router-dom';
+import Home from "./Home";
+import Experience from "./Experience";
+import Skills from "./Skills";
+import Books from "./Books";
+import Papers from "./Papers";
+import Resume from "./resume";
 
 export default function Header(props){
     const homePath=props.homePath;
-    const navlist=["Experience","Skills","Books","Papers","Resume"]
-    const listItems = navlist.map(index => <li className="nav-item"><Link className="nav-link active nav-link-item" to={homePath+"/"+index}><strong>{index}</strong></Link></li>);
+    const options=[
+        {name:"Home",link:<Home resumeLink={"/resume"}/>},
+        {name:"Experience",link:<Experience/>},
+        {name:"Skills",link:<Skills/>},
+        {name:"Books",link:<Books/>},
+        {name:"Papers",link:<Papers/>}];
+    for(let i=0;i<options.length;i++){
+        console.log(options[i],i);
+    }
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
+
+    const navigate = useNavigate();
+    const [open, setOpen] = React.useState(false);
+    const delay = (ms) => {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+    };
+    const handleMenuItemClick = async (event, index) =>{
+        if(index === selectedIndex){ return;}
+        setSelectedIndex(index);
+        setOpen(true);
+        await delay(500)
+        if(index==0){
+            console.log(homePath);
+            // navigate(homePath); // navigate to home
+        }
+        // console.log(optionsselectedIndex);
+        setOpen(false);
+    }
     return (
-        <div className="container sticky-top mt-3 d-flex justify-content-center align-content-center" id="header-container">
-            <div className="container header-container-home">
-                <Link className="header-container-home-link" to={homePath}><h1>Home</h1></Link>
+        <>
+            <div className="sticky-top mt-3 d-flex justify-content-around" id="header-container">
+                <Tabs 
+                    value={selectedIndex}
+                    onChange={handleMenuItemClick}
+                    textColor="primary"
+                    indicatorColor="primary"
+                    aria-label="primary tabs example"
+                >
+                    {options.map((option, index) =>(
+                        <Tab
+                        value={index}
+                        label={option.name}
+                        >{options}</Tab>
+                    ))}
+                </Tabs>
             </div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary" id="header-navbar-id">
-                <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="customNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">{listItems}</ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+            <Backdrop
+                sx={{color: '#fff', zIndex: (theme) => theme.zIndex.drawer+1 }}
+                open = {open}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
+            <>
+            {options[selectedIndex].link}
+            </>
+        </>
     )
-}
+};
 
 Header.defaultProps = {
     title: "Portfolio",

@@ -42,10 +42,13 @@
   }
   .home-p{
     line-height: 200%;
-    text-align: justify;
+    /* text-align: inline-flex; */
     font-size: 18px;
   }
-
+  #home-p-social{
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+  }
   #home-container-paragraph{
     justify-items: auto;
     margin: 1%;
@@ -53,8 +56,8 @@
   #profile-socials{
     text-decoration: none;
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+    display:inline-flex;
+    /* flex-wrap: wrap; */
   }
   .profile-socials-item{
     text-decoration: none;
@@ -62,3 +65,8 @@
     margin: 1%;
     margin-top: 0;
   }
+  .btn-social{
+    margin-left: 0;
+  }
+
+  

@@ -44,17 +44,7 @@ const Experience = () => {
     ];
   return (
     <>
-        <ScrollToTop/>
-        <div className="container justify-content-center mt-2 special-container">
-            <h1>Experience</h1>
-            <p className='home-p'>
-                I wield the language of innovation, Python, and the elegance of C++. At Predigle, I crafted exquisite Django Rest APIs, sculpting code with precision, while orchestrating a symphony of unit tests through the rhythmic dance of Github Actions. My passion for C++ flourished at imec, where I artfully designed a memory hierarchy tester, pushing the boundaries of sophistication. My code is not just functional; it's a seductive ballet of technology.
-            </p>
-        </div>
-        <div className="container justify-content-center mt-2 d-flex">
-            <SideNav data={educationData} _setCurrentEducation={setCurrentEducation}/>
-            <ExperienceItem data={educationData[index]} />
-        </div>
+    Thanks
     </>
   );
 };

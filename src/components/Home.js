@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/home.css'
 import profilePic from './assets/profile-pic.jpeg'
 import './styles/item.css'
 import ScrollToTop from './scroll-top';
 import { Link } from 'react-router-dom';
+
+import Button from '@mui/material/Button';
+import LoadingButton from '@mui/lab/LoadingButton';
+import { Tooltip } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import Fade from '@mui/material/Fade';
 
 export default function Home(props){
 
@@ -21,6 +27,26 @@ export default function Home(props){
     ]
     const socials=[{name:"GitHub",link:"https://github.com/cohitherewer"},
     {name:"Facebook",link:"#"},{name:"LinkedIn",link:"https://www.linkedin.com/in/cabhisr4/"}];
+
+    
+    const [hoveredButton, setHoveredButton] = useState(null);
+    const handleMouseEnter = (index) => {
+      setHoveredButton(index);
+    };
+    const handleMouseLeave = () => {
+      setHoveredButton(null);
+    };
+
+    // loading button
+    const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
+    const handleDownload = async () => {
+      setLoading(true);
+      await setTimeout(() =>{
+        navigate(props.resumeLink)
+        setLoading(false);
+      }, 2000);
+    };
     return (
       <>
       <ScrollToTop/>
@@ -29,39 +55,48 @@ export default function Home(props){
           <img src={profilePic} alt="Profile Pic" className="profile-pic"/>
         </div>
         <div className="container justify-content-center special-container" id='home-container-paragraph'>
-          <h1>Hey, I am Abhinaba</h1>
+          <h1>Hi, I am Abhinaba</h1>
           <p className='home-p' id='home-p'>
-            As an engineer, passionate about Computer Architecture, Advanced Architectures, Advanced Networks. In 2024 I took a chance and left my Job for a Phd at University of Ghent.
-            <br/>
-            I keep diving into engineering details. To put my details my learnings into practice I keep building things on side. Some of them are,
-            <ol className='item-ol'>
-              {projects.map((project,index)=>(
-                <li className=''>
-                  <Link to={project.link}><strong>{project.name}:</strong></Link> {project.description}
-                </li>
-              ))
-              }
-            </ol>
-            I completed my B.E in Electrical Engineering from <Link className="" to={"http://www.jaduniv.edu.in/"}>Jadavpur University</Link>
-            <br/>
-            M.Tech CS from <Link className='' to={"https://www.isical.ac.in/"}>Indian Statistical Institute, Kolkata</Link>. 
-            <br/>
-            I colaborated with <Link className='' to={"https://www.imec-int.com/en"}>IMEC,Belgium</Link> for my <Link className=''to={'#'}>master's thesis.</Link>
-            <br/>
-            I am currently doing my PhD at <strong>ID Lab</strong> of <i><Link to={"https://www.ugent.be/"}>Universiteit Gent</Link></i>
+            I am a PhD student in the Information Technology Department at Universiteit Ghent. My research focues on Cloud and Network Orchestration Techniques.
+            In this regard my recent assignment focues on Edge computing, effecient resource allocation in context of vision applications.
+            Currently I am studying computer vision, deep learning compilation and different energy efficient architectures.
+            I completed my master's degree from <Link className='' to={"https://www.isical.ac.in/"}>ISI, Kolkata</Link> and B.E from <Link className="" to={"http://www.jaduniv.edu.in/"}>Jadavpur University</Link>.
             <hr/>
-            You can find me on my socials below,
           </p>
+          <p className='home-p' id='home-p-social'>You can find me on:
           <ul className='profile-socials' id='profile-socials'>
             {socials.map((social,index)=>{
               return (
               <li className='profile-socials-item'>
-                <Link className='btn btn-light btn-outline-dark'to={social.link} type='button' target='_blank'>{social.name}</Link>
+                <Tooltip title = {social.link}
+                  TransitionComponent={Fade}
+                  TransitionProps={{timeout: 500}}
+                  enterDelay={150}
+                  leaveDelay={100}
+                >
+                  <Button variant={hoveredButton == index ?"contained":"outlined"}
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
+                    key={index}
+                    href={social.link} className='btn-social'>
+                      {social.name}
+                  </Button>
+                </Tooltip>
               </li>);
             })
             }
-          </ul>
-          <p className='home-p'>You can find my resume <Link className='' to={props.resumeLink}>here</Link>.</p>
+          </ul></p>
+          <p className='home-p'>Want to know more about me?
+          <LoadingButton
+            variant='string'
+            loading={loading}
+            onClick={handleDownload}
+            className='MuiLoadingButton-containedSizeSmall'
+          >
+            {loading? 'Checking out...': 'Resume'} 
+          </LoadingButton>
+          </p>
+          {/* <p className='home-p'>You can find my resume <Link className='' to={props.resumeLink}>here</Link>.</p> */}
         </div>
       </div>
       </>
