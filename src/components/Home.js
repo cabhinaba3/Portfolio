@@ -74,7 +74,7 @@ export default function Home(props){
           <h1>Hi, I am Abhinaba</h1>
           <p className='home-p' id='home-p'>
             I am a PhD student in the Information Technology Department at <Link to={"https://www.ugent.be/"}>Universiteit Ghent</Link>. My research focues on Cloud and Network Orchestration Techniques.
-            In this regard my recent assignment focues on edge computing, effecient resource allocation in context of vision applications.
+            In this regard my recent assignment focues on Edge computing, effecient resource allocation in context of vision applications.
             Currently I am studying computer vision, deep learning compilation and different energy efficient architectures.
             I completed my master's degree from <Link className='' to={"https://www.isical.ac.in/"}>ISI, Kolkata</Link> and B.E from <Link className="" to={"http://www.jaduniv.edu.in/"}>Jadavpur University</Link>. <br/>
             Before joining PhD, I was a software engineer at <Link className='' to={"https://predigle.com/"}>Predigle, India</Link>. I was an international scholar at <Link className='' to={"https://www.imec-int.com/en"}>imec, Belgium</Link> (master's thesis) and interned at <Link to={"https://www.airtel.in/"}>Airtel, India</Link>.
@@ -86,39 +86,43 @@ export default function Home(props){
             <Colaborate/>
           </div>
           <hr/>
-          <p className='home-p' id='home-p-social'>You can also find me on:
-          <ul className='profile-socials' id='profile-socials'>
-            {socials.map((social,index)=>{
-              return (
-              <li className='profile-socials-item'>
-                <Tooltip title = {social.link}
-                  TransitionComponent={Fade}
-                  TransitionProps={{timeout: 500}}
-                  enterDelay={150}
-                  leaveDelay={100}
-                >
-                  <Button variant={hoveredButton == index ?"contained":"outlined"}
-                    onMouseEnter={() => handleMouseEnter(index)}
-                    onMouseLeave={handleMouseLeave}
-                    key={index}
-                    href={social.link} className='btn-social'>
-                      {social.name}
-                  </Button>
-                </Tooltip>
-              </li>);
-            })
-            }
-          </ul></p>
-          <p className='home-p'>Want to know more about me?
-          <LoadingButton
-            variant='string'
-            loading={loading}
-            onClick={handleDownload}
-            className='MuiLoadingButton-containedSizeSmall'
-          >
-            {loading? 'Checking out...': 'Resume'}
-          </LoadingButton>
-          </p>
+          <div className='container d-flex flex-wrap'>
+            <p className='home-p' id='home-p-social'>Find me on:</p>
+            <ul className='profile-socials' id='profile-socials'>
+              {socials.map((social,index)=>{
+                return (
+                <li className='profile-socials-item'>
+                  <Tooltip title = {social.link}
+                    TransitionComponent={Fade}
+                    TransitionProps={{timeout: 500}}
+                    enterDelay={150}
+                    leaveDelay={100}
+                  >
+                    <Button variant={hoveredButton == index ?"contained":"outlined"}
+                      onMouseEnter={() => handleMouseEnter(index)}
+                      onMouseLeave={handleMouseLeave}
+                      key={index}
+                      href={social.link} className='btn-social'>
+                        {social.name}
+                    </Button>
+                  </Tooltip>
+                </li>);
+              })
+              }
+            </ul>
+          </div>
+          <div className='container d-flex flex-wrap'>
+            <p className='home-p'>Want to know more about me?
+            <LoadingButton
+              variant='string'
+              loading={loading}
+              onClick={handleDownload}
+              className='MuiLoadingButton-containedSizeSmall'
+            >
+              {loading? 'Checking out...': 'Check out my Resume'}
+            </LoadingButton>
+            </p>
+          </div>
           <Dialog
             fullScreen
             open={resumeOpen}
