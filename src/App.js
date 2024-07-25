@@ -21,27 +21,27 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function App() {
   // gtag related code
-  useEffect(()=>{
-    const gtagId = (process.env.REACT_APP_ENV === "production") ? process.env.REACT_APP_GTAG : null;
-    if(gtagId){
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${gtagId}`;
-      document.head.append(script);
+  // useEffect(()=>{
+  //   const gtagId = (process.env.REACT_APP_ENV === "production") ? process.env.REACT_APP_GTAG : null;
+  //   if(gtagId){
+  //     const script = document.createElement('script');
+  //     script.async = true;
+  //     script.src = `https://www.googletagmanager.com/gtag/js?id=${gtagId}`;
+  //     document.head.append(script);
 
-      script.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){
-          window.dataLayer.push(arguments);
-        }
-        window.gtag = gtag;
-        gtag('js',new Date());
-        gtag('config', gtagId);
-      }
-    }else{
-      console.warn('gtag not defined');
-    }
-  }, []);
+  //     script.onload = () => {
+  //       window.dataLayer = window.dataLayer || [];
+  //       function gtag(){
+  //         window.dataLayer.push(arguments);
+  //       }
+  //       window.gtag = gtag;
+  //       gtag('js',new Date());
+  //       gtag('config', gtagId);
+  //     }
+  //   }else{
+  //     console.warn('gtag not defined');
+  //   }
+  // }, []);
   const homePath = "";
   return (
     <>
