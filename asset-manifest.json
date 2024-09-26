@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.bc55de92.css",
-    "main.js": "/Portfolio/static/js/main.6afb6fac.js",
+    "main.js": "/Portfolio/static/js/main.ff1c1efc.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
-    "static/media/Abhinaba_Chakraborty_MTECH_THESIS.pdf": "/Portfolio/static/media/Abhinaba_Chakraborty_MTECH_THESIS.aa54a27c9b6b881413a6.pdf",
-    "static/media/pdf.worker.min.js": "/Portfolio/static/media/pdf.worker.min.c6ff14fdcae39c854bd4.js",
+    "static/media/pdf.worker.min.js": "/Portfolio/static/media/pdf.worker.min.5fe463b05a46efd5a4ba.js",
     "static/media/Graph Algo Presentation 2.pdf": "/Portfolio/static/media/Graph Algo Presentation 2.3114a9d9d818e20041af.pdf",
     "static/media/Graph Algo Presentation 1.pdf": "/Portfolio/static/media/Graph Algo Presentation 1.496d0a785dea4c748e57.pdf",
     "static/media/profile-pic.jpeg": "/Portfolio/static/media/profile-pic.55953dc27595b5f33ed6.jpeg",
     "static/media/AbhinabaChakrabortyResumePhD.pdf": "/Portfolio/static/media/AbhinabaChakrabortyResumePhD.7519ed245f4d9f11a437.pdf",
     "index.html": "/Portfolio/index.html",
     "main.bc55de92.css.map": "/Portfolio/static/css/main.bc55de92.css.map",
-    "main.6afb6fac.js.map": "/Portfolio/static/js/main.6afb6fac.js.map",
+    "main.ff1c1efc.js.map": "/Portfolio/static/js/main.ff1c1efc.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc55de92.css",
-    "static/js/main.6afb6fac.js"
+    "static/js/main.ff1c1efc.js"
   ]
 }
