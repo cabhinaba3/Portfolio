@@ -23,7 +23,7 @@ export default function Header(props){
         {name:"Home",link:<Home resumeLink={homePath+"/Resume"}/>},
         {name: "Projects",link:<ProjectList/>},
         // {name: "Collaborate",link:<Colaborate/>}
-        // {name:"Experience",link:<Experience/>},
+        {name:"Experience",link:<Experience/>},
         // {name:"Skills",link:<Skills/>},
         // {name:"Books",link:<Books/>},
         // {name:"Papers",link:<Papers/>}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import cv from './assets/AbhinabaChakrabortyResumePhD.pdf'
-import thesis from './assets/Abhinaba_Chakraborty_MTECH_THESIS.pdf'
+// import thesis from './assets/Abhinaba_Chakraborty_MTECH_THESIS.pdf'
 import './styles/resume.css'
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';

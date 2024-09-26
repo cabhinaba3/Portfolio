@@ -21,34 +21,29 @@ export default function BasicCard(props) {
     setLayout('center');
   }
   return (
-    <Card sx={{width:250}} className='card-class'>
+    <Card sx={{width:250}} className='card-class '>
+      <div className='container d-flex'>
       <div className='container d-flex' id='card-class-div-1'>
         <Typography level="title-lg">{project.title}</Typography>
         <Typography level="body-sm">{project.date}</Typography>
         {/* <IconButton
           aria-label="bookmark Bahamas Islands"
           variant="plain"
-          color="neutral"
+          color="neutral" 
           size="sm"
           sx={{ position: 'absolute', top: '0.875rem', right: '0.5rem' }}
         >
         </IconButton> */}
       </div>
-      <AspectRatio minHeight="120px" maxHeight="200px">
+      {/* <AspectRatio minHeight="120px" maxHeight="200px">
         <img
           src={project.picLink}
           srcSet={project.picLink}
           loading="lazy"
           alt=""
         />
-      </AspectRatio>
+      </AspectRatio> */}
       <CardContent orientation="horizontal">
-        <div>
-          <Typography level="body-xs">Tech Stack</Typography>
-          <Typography fontSize="lg" fontWeight="lg">
-            {project.techStack[0]}
-          </Typography>
-        </div>
         <Button
           variant="solid"
           size="md"
@@ -60,7 +55,6 @@ export default function BasicCard(props) {
           Explore
         </Button>
       </CardContent>
-
       <Modal open={!!layout} onClose={() => setLayout(undefined)}>
         <ModalDialog layout={layout}>
           <ModalClose />
@@ -69,13 +63,23 @@ export default function BasicCard(props) {
             <div>
               {project.description}
             </div>
+            <hr/>
+            <div>
+              The technology involved in the projects are:
+              {project.techStack.map((tech ,index)=>(
+                <>{tech},</>
+              ))}
+            </div>
+            {/* <hr/> */}
             <div className='container d-flex justify-content-left flex-wrap m-1'>
               <Button variant=''><Link to={project.link}>GitHub</Link></Button>
-              <Button variant=''>Report Link</Button>
+              <Button variant=''><Link to={"#"}>Report Link</Link></Button>
+              <Button variant=''><Link to={project.website}>WebSite</Link></Button>
             </div>
           </DialogContent>
         </ModalDialog>
       </Modal>
+      </div>
     </Card>
   );
 }

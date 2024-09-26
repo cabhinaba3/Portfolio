@@ -34,8 +34,10 @@ export default function Home(props){
         description:"A implementation of search engine in pylucene"
       }
     ]
-    const socials=[{name:"GitHub",link:"https://github.com/cohitherewer"},
-    {name:"Facebook",link:"#"},{name:"LinkedIn",link:"https://www.linkedin.com/in/cabhisr4/"}];
+    const socials=[
+      {name:"GitHub",link:"https://github.com/cohitherewer"},
+      {name:"Facebook",link:"#"},
+      {name:"LinkedIn",link:"https://www.linkedin.com/in/cabhisr4/"}];
 
     
     const [hoveredButton, setHoveredButton] = useState(null);
@@ -73,7 +75,7 @@ export default function Home(props){
         <div className="container justify-content-center special-container" id='home-container-paragraph'>
           <h1>Hi, I am Abhinaba</h1>
           <p className='home-p' id='home-p'>
-            I am a PhD student in the Information Technology Department at <Link to={"https://www.ugent.be/"}>Universiteit Ghent</Link>. My research focues on Cloud and Network Orchestration Techniques.
+            I am a PhD student in the Information Technology Department at <Link to={"https://www.ugent.be/"}>Universiteit Ghent</Link>. My research focues on Cloud Orchestration Techniques.
             In this regard my recent assignment focues on Edge computing, effecient resource allocation in context of vision applications.
             Currently I am studying computer vision, deep learning compilation and different energy efficient architectures.
             I completed my master's degree from <Link className='' to={"https://www.isical.ac.in/"}>ISI, Kolkata</Link> and B.E from <Link className="" to={"http://www.jaduniv.edu.in/"}>Jadavpur University</Link>. <br/>
@@ -136,6 +138,11 @@ export default function Home(props){
             <div className='sticky-top d-flex justify-content-around' id='resume-dialog-header'>
               <DialogTitle id='scrollable-dialog-titile'>Resume</DialogTitle>
               <DialogActions>
+              {/* <Link href='/assets/AbhinabaChakrabortyResumePhD.pdf' download={"AbhinabaChakrabortyResume.pdf"}> */}
+                {/* <Button color='primary' > */}
+                  {/* Download */}
+                {/* </Button> */}
+                {/* </Link> */}
                 <Button onClick={handleResumeClose} color='primary'>Close</Button>
               </DialogActions>
             </div>
